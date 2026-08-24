@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css variables</title>
+    <style>
+        :root{
+            --color:rgb(255, 132, 0);
+            --defop:0.4;
+            --defpad:23px;
+            --secolor:rgb(42, 165, 87);
+        }
+        *{
+            margin: 0;
+            padding:0;
+        }
+        .nav{
+            background-color: var(--color);
+        }
+        ul {
+            display:flex;
+        }
+        ul li{
+            list-style:none;
+            opacity:var(--defop);
+            padding:var(--defpad);
+            border: 1px solid black;
+        }
+        ul li:first-child{
+            background-color: var(--secolor);
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>home</li>
+            <li>about</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non nam sed accusantium porro at dolor veniam doloribus voluptatibus natus animi.
+    </div>
+    
+</body>
+</html>

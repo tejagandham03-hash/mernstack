@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user data collection</title>
+</head>
+
+<body>
+    <h1>this is a user data collection</h1>
+    <form action="post">
+        <div>
+            <label for="username">username: </label>
+            <input id="username" type="text" name="username" placeholder="enter your fullname required">
+            
+        </div>
+        <div>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">male: </label>
+            <input type="radio" id="female" name="gender" value="famale">
+            <label for="female">female: </label>
+        </div>
+        <div>
+            <label for="mobile no">mobile no: </label>
+            <input id="mobile" type="tel" name="mobile no" placeholder="enter your mobile no" pattern="[0-9]{10}"required>
+        </div>
+        <div>
+            <label for="email">gmail: </label>
+            <input id="email" type="email" name="email" placeholder="enter your email"placeholder="example@TEHAGMAIL.COM"required>
+        </div>
+        <div>
+            <label for="password">password: </label>
+            <input id="password" type="text" name="password" placeholder="enter your password" minlength="8" required>
+        </div>
+        <input type="submit" value="submit">
+        
+
+
+</body>
+
+</html>

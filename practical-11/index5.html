@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more on css selectros</title>
+    <style>
+        .box:first-child{
+            background-color: aqua;
+        }
+        .box::first-line{
+            color: blueviolet;
+        }
+        .boxes *{
+            color:blue;
+            border: 2px solid black;
+        }
+        .boxes::before{
+            content:"you are good";
+            color: blueviolet;
+        }
+        .boxes::after{
+            content:"you are bad";
+            color: rgb(43, 226, 168);
+        }
+         .box::first-letter{
+            color: red;
+            font-size: 40px;
+            
+        }
+        input::placeholder{
+            color: rgb(255, 255, 0);
+            
+        }
+        ::selection{
+            background-color: rgb(255, 0, 119);
+            color: white;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div class="box">iam first box</div>
+        <div class="box">iam second box</div>
+        <div class="box">iam third box</div>
+        <input type="text" placeholder="enter your name">
+    </div>
+</body>
+</html>

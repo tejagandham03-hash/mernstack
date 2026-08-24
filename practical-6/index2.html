@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors</title>
+    <style>
+        /* element selector */
+        h1 {
+            color: rgb(0, 255, 64);
+        }
+
+
+        /* id selector */
+        #green {
+            background-color: blueviolet;
+        }
+
+        /* class selector */
+        .bg-yellow {
+            color: coral;
+        }
+
+        /* child selector*/
+        div>h3 {
+            color: blanchedalmond;
+        }
+
+        div>p {
+            color: rgb(232, 205, 255);
+        }
+
+        /* descedent selector */
+        div h3 {
+            color: blanchedalmond;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        a:visited{
+            color:chocolate
+        }
+        a:link{
+            color: cadetblue;
+        }
+        a:active{
+            color: navy;
+        }
+        a:hover{
+            background-color: brown;
+        }
+        #shinchn{
+            color: crimson;
+        }
+        .xyz h1{
+            background-color: aqua;
+        }
+        .xyz h1{
+            color:blue;
+        }
+        div.myz p{
+            color: darkmagenta;
+        }
+              
+        
+
+        
+    </style>
+</head>
+
+<body>
+    <h1>selectors</h1>
+    <div>
+        <p>this is a paragraph</p>
+    </div>
+    <div id="green">
+        this is another paragraph
+    </div>
+    <div class="bg-yellow">
+        <article>
+            <h3> this is heading</h3>
+        </article>
+        <h3> this is heading</h3>
+        <p>this is a third paragraph</p>
+    </div>
+    <a href="https://www.google.com">open google</a>
+    <br>
+
+    <a href="https://www.facebook.com" target="blank">open facebook</a>
+
+    <br>
+    <a href="https://www.instagram.com">open instagram</a>
+    <p id="shinchn">this is para</p>
+    <div class="abcde xyz">
+        <h1>this is another heading</h1>
+        <p>this is another paragraph</p>
+    </div>
+    <div class="abcdef myz">
+        <h2>this is another heading</h2>
+        <p>this is another paragraph</p>
+    </div>
+  
+ </body>
+
+</html>
