@@ -1,0 +1,6 @@
+ @import "tailwindcss";
+ .pen{
+  background-color: aqua;
+  height: 50px;
+  width: 50x;
+ }
